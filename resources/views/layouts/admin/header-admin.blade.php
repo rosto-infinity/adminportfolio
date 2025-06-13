@@ -1,4 +1,4 @@
-  <header>
+  <header >
         <nav>
             <ul>
                 <li><img src="../../template/assets/img/logo.png" alt=""></li>
@@ -18,4 +18,4 @@
                 <li><a href="login.html">Logout</a></li>
             </ul>
         </span>
-    </header>
+</header>

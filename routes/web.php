@@ -9,12 +9,11 @@ Route::get('/test', function () {
     return view('welcome');
 });
 
-Route::get("/", [HomeController::class,"index"])->name("home-page");
-Route::get("/admin/dashboard", [DashboardController::class,'index'] )->name("admin-dashboard");
+Route::get('/', [HomeController::class, 'index'])->name('home-page');
+Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin-dashboard');
 
-Route::get('/admin/abouts', [AboutController::class,'edit'] )->name("edit-adout");
+Route::get('/admin/abouts', [AboutController::class, 'edit'])->name('edit-adout');
 
-Route::get('/{any}', function(){
+Route::get('/{any}', function () {
     return view('not-found-page');
-})->where('any', '.*')->name("not-found-page");
-
+})->where('any', '.*')->name('not-found-page');
