@@ -22,7 +22,7 @@
                         </li>
                         <li>
                             <a  class="{{ (request()->is('admin/abouts') ) ? 'nav-active'  : ''}}"
-                            href="{{ route('edit-adout') }}">
+                            href="{{ route('edit-about') }}">
                                 <span><i class="fas fa-user"> </i></span>
                                 <span>About Me</span>
                             </a>
