@@ -11,28 +11,36 @@
                     <div class="wrapper_left">
                         <div class="card" >
                             <label>Full Name</label>
+             @error('name')
+                  <span class="text-red-500 "> {{ $message }}</span>
+              @enderror
                             <input type="text"
                             value="{{ isset($about->name) ? $about->name : ''}}"
                             name="name"
                               >
-              @error('name')
-                  <span class="bg-red-500"> {{ $message }}</span>
-              @enderror
+          
                             <label>Email</label>
+             @error('email')
+                <span class="text-red-500">{{ $message}}</span>
+            @enderror
                             <input type="email"
                              value="{{ isset($about->email) ? $about->email : ''}}"
                             name="email">
-            
+           
                             <label>Phone</label>
+            @error('phone')
+                 <span class="text-red-500">{{ $message}}</span>
+            @enderror
                             <input type="text"
                              value="{{ isset($about->phone) ? $about->phone : ''}}"
                             name="phone">
-            
                             <label>Address</label>
+        @error('phone')
+             <span class="text-red-500">{{ $message}}</span>
+        @enderror
                             <input type="text" 
                              value="{{ isset($about->address) ? $about->address : ''}}"
                             name="address">
-            
                             <label>Description</label>
                             <textarea cols="10" rows="3"  >
                                 {{ isset($about->description) ? $about->description : ''}}
