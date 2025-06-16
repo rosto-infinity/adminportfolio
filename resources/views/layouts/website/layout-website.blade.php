@@ -42,7 +42,7 @@
         <script src="{{ asset('template/assets/js/swiper-bundle.min.js') }}"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="asset('template/assets/js/main.js')"></script>
+        <script src="{{ asset('template/assets/js/main.js') }}"></script>
  </body>
 
 </html>

@@ -7,7 +7,7 @@
             <section class="home section" id="home">
                 <div class="home_container container grid">
                     <div class="home_img">
-                        <img src="../../template/assets/img/home.png" alt="">
+                        <img src="{{ isset($about->home_image) ? asset('storage/images/'.$about->home_image) : asset('storage/images/avatar.jpg') }}" alt="">
                     </div>
 
                     <div class="home_data">
@@ -73,7 +73,7 @@
                <span class="section__subtitle">My introduction</span>
 
                <div class="about_container container grid">
-                 <img src="../../template/assets/img/about-img.png" alt="" class="about_img">
+                 <img src="{{ isset($about->banner_image) ? asset('storage/images/'.$about->banner_image) : asset('storage/images/avatar.jpg') }}" alt="" class="about_img">
 
                  <div class="about_data">
                     <p class="about_description">
