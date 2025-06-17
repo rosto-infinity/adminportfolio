@@ -16,7 +16,7 @@
             <div class="social_table-items">
                 <p>{{ $media ->link}}</p>
                 <button class="service_table-icon">
-                    <i class=" fas fa-pencil-alt"></i>
+                    <i class="{{ $media->icon }}"></i>
                 </button>
                 <button class=" danger">
                     delete
@@ -24,21 +24,8 @@
             </div>
               @endforeach 
             <br>
-            <form action="">
-                <div class="social_table-heading">
-                    <p>Link</p>
-                    <span style="color:#006fbb;">(Find your icon class: Font Awesome)</span>
-                    <p></p>
-                </div>
-                <p></p>
-                <div class="social_table-items">
-                    <input type="text">
-                    <input type="text">
-                    <button>
-                        Add Media
-                    </button>
-                </div>
-            </form>
+            
+           @include('admin.medias.form-medias') 
         </div>
     
   </div>
