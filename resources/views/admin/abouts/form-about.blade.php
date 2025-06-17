@@ -6,6 +6,7 @@
 </div>
 
 <div class="card-wrapper grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+   
     <!-- Colonne gauche -->
     <div class="space-y-4">
         <div class="card p-4">
