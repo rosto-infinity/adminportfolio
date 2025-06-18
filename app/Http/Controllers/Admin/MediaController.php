@@ -31,6 +31,15 @@ class MediaController extends Controller
     Media::create($validateData);
         return redirect()
         ->route('index-media')
-        ->with('sucess', 'Réseau social ajouté avec succès');
+        ->with('success', 'Réseau social ajouté avec succès');
     }
+
+    public function destroy($id)
+{
+    $media = Media::findOrFail($id);
+    $media->delete();
+    
+    return redirect()->route('index-media')
+        ->with('delete-success', 'Média supprimé avec succès');
+}
 }
