@@ -4,6 +4,7 @@
                 <span class="nav__close">
                     <i class="fas fa-window-close"></i>
                 </span>
+                
                 <div class="nav-list">
                     <ul>
                         <li>

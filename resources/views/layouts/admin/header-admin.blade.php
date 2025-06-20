@@ -9,13 +9,21 @@
             </ul>
         </nav>
         <span class="header-profile-nav">
-            <span> <i class="fa fa-sort-up"></i></span>
-            <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <hr class="hr">
-                <li><a href="#">Message</a></li>
-                <hr class="hr">
-                <li><a href="login.html">Logout</a></li>
-            </ul>
+           <div class="mt-3 space-y-1">
+                <x-responsive-nav-link :href="route('profile.edit')">
+                    {{ __('Profile') }}
+                </x-responsive-nav-link>
+
+                <!-- Authentication -->
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <x-responsive-nav-link :href="route('logout')"
+                            onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+                        {{ __('Log Out') }}
+                    </x-responsive-nav-link>
+                </form>
+            </div>
         </span>
 </header>
