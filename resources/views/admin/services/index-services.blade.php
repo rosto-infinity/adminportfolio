@@ -31,9 +31,9 @@
                     <div class="flex gap-5 ml-2 relative">
 
                         <input class="" type="text" name="name" placeholder="Rechercher le titre de service..."
-                            value="">
+                            value="{{ Request::get('name') }}" />
                         <button class="min-w-30 h-12 ">Recherche</button>
-                        <a href="{{ route('index-service')}}">
+                        <a href="{{ url('admin/services') }}">
                             <button class="min-w-30 h-12">Réinitialiser</button>
                         </a>
                     </div>
