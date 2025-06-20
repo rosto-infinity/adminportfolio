@@ -19,7 +19,7 @@ class Service extends Model
     {
         $query = self::query();
 
-        if($request->filled('name')){
+        if(($request->filled('name') )) {
             $query->where('name', 'like', '%' . $request->input('name') . '%');
         }
         return $query;   

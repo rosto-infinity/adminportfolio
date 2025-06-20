@@ -33,8 +33,9 @@
                         <input class="" type="text" name="name" placeholder="Rechercher le titre de service..."
                             value="{{ Request::get('name') }}" />
                         <button class="min-w-30 h-12 ">Recherche</button>
-                        <a href="{{ url('admin/services') }}">
-                            <button class="min-w-30 h-12">Réinitialiser</button>
+                        <a  class="min-w-30 px-2 h-12 bg-blue-600 text-white flex items-center justify-center rounded-md"
+                        href="{{ url('admin/services') }}">
+                            Réinitialiser
                         </a>
                     </div>
                 </div>
