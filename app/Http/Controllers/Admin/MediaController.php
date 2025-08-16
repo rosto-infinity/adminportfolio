@@ -17,7 +17,7 @@ use App\Http\Controllers\Controller;
 class MediaController extends Controller
 {
     /**
-     * Affiche la liste des médias.
+     * -Affiche la liste des médias.
      *
      * @return \Illuminate\View\View
      */
