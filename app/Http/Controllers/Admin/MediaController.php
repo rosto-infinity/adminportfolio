@@ -53,7 +53,7 @@ class MediaController extends Controller
     }
 
     /**
-     * Supprime un média par son identifiant.
+     * -Supprime un média par son identifiant.
      *
      * @param int $id
      * @return \Illuminate\Http\RedirectResponse
