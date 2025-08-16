@@ -46,6 +46,7 @@
                              <strong>{{ $skill->proficiency}}%</strong>
                         </div>
                         
+                    
                         @if ($skill->service )
                         <p>{{$skill->service->name }}</p>   
                         @else
