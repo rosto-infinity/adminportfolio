@@ -28,7 +28,7 @@ class MediaController extends Controller
     }
 
     /**
-     * Enregistre un nouveau média après validation.
+     * -Enregistre un nouveau média après validation.
      *
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse
